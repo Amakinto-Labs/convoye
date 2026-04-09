@@ -1,16 +1,16 @@
-# FR-004: Git Integration
+# FR-004: Git Integration ([#4](https://github.com/Amakinto-Labs/convoye/issues/4))
 
 Git integration connects Convoye to source code repositories, enabling branch detection, promotion branch creation, pull request management, and webhook-driven automation.
 
 ## Requirements
 
-- [ ] **FR-004.1**: User can connect GitHub account via OAuth
-- [ ] **FR-004.2**: User can select repository from connected account
-- [ ] **FR-004.3**: System reads branches from connected repository
-- [ ] **FR-004.4**: System creates branches via Git provider API
-- [ ] **FR-004.5**: System creates and manages pull requests
-- [ ] **FR-004.6**: System listens for webhook events (push, PR merge)
-- [ ] **FR-004.7**: Support for GitHub initially, GitLab and Bitbucket planned
+- [ ] **FR-004.1** ([#31](https://github.com/Amakinto-Labs/convoye/issues/31)): User can connect GitHub account via OAuth
+- [ ] **FR-004.2** ([#32](https://github.com/Amakinto-Labs/convoye/issues/32)): User can select repository from connected account
+- [ ] **FR-004.3** ([#33](https://github.com/Amakinto-Labs/convoye/issues/33)): System reads branches from connected repository
+- [ ] **FR-004.4** ([#34](https://github.com/Amakinto-Labs/convoye/issues/34)): System creates branches via Git provider API
+- [ ] **FR-004.5** ([#35](https://github.com/Amakinto-Labs/convoye/issues/35)): System creates and manages pull requests
+- [ ] **FR-004.6** ([#36](https://github.com/Amakinto-Labs/convoye/issues/36)): System listens for webhook events (push, PR merge)
+- [ ] **FR-004.7** ([#37](https://github.com/Amakinto-Labs/convoye/issues/37)): Support for GitHub initially, GitLab and Bitbucket planned
 
 ## Details
 

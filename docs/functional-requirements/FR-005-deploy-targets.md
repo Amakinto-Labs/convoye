@@ -1,15 +1,15 @@
-# FR-005: Deploy Targets
+# FR-005: Deploy Targets ([#5](https://github.com/Amakinto-Labs/convoye/issues/5))
 
 Deploy targets define where and how code is deployed when a promotion is completed. Each environment node in the pipeline can be connected to a specific deploy target.
 
 ## Requirements
 
-- [ ] **FR-005.1**: User can connect Railway environment
-- [ ] **FR-005.2**: User can connect Vercel project
-- [ ] **FR-005.3**: User can configure custom webhook endpoint
-- [ ] **FR-005.4**: System triggers deployment on promotion merge
-- [ ] **FR-005.5**: System tracks deployment status
-- [ ] **FR-005.6**: Deploy target configurable per environment node
+- [ ] **FR-005.1** ([#38](https://github.com/Amakinto-Labs/convoye/issues/38)): User can connect Railway environment
+- [ ] **FR-005.2** ([#39](https://github.com/Amakinto-Labs/convoye/issues/39)): User can connect Vercel project
+- [ ] **FR-005.3** ([#40](https://github.com/Amakinto-Labs/convoye/issues/40)): User can configure custom webhook endpoint
+- [ ] **FR-005.4** ([#41](https://github.com/Amakinto-Labs/convoye/issues/41)): System triggers deployment on promotion merge
+- [ ] **FR-005.5** ([#42](https://github.com/Amakinto-Labs/convoye/issues/42)): System tracks deployment status
+- [ ] **FR-005.6** ([#43](https://github.com/Amakinto-Labs/convoye/issues/43)): Deploy target configurable per environment node
 
 ## Details
 

@@ -1,17 +1,17 @@
-# FR-001: Pipeline Builder
+# FR-001: Pipeline Builder ([#1](https://github.com/Amakinto-Labs/convoye/issues/1))
 
 The pipeline builder allows users to visually design deployment pipelines using a drag-and-drop canvas. Each pipeline defines the environments code flows through and the promotion paths between them.
 
 ## Requirements
 
-- [ ] **FR-001.1**: User can create a new pipeline for a project
-- [ ] **FR-001.2**: User can add environment nodes to canvas via drag-and-drop
-- [ ] **FR-001.3**: User can connect environments with promotion path edges
-- [ ] **FR-001.4**: User can configure each environment: name, branch, deploy target, auto-deploy, required reviewers
-- [ ] **FR-001.5**: User can configure promotion paths: require tests, require approval
-- [ ] **FR-001.6**: Pipeline supports non-linear flows (one source to multiple targets)
-- [ ] **FR-001.7**: Pipeline state persists to database and can be reloaded
-- [ ] **FR-001.8**: Pipeline generates convoye.yml configuration file
+- [ ] **FR-001.1** ([#7](https://github.com/Amakinto-Labs/convoye/issues/7)): User can create a new pipeline for a project
+- [ ] **FR-001.2** ([#8](https://github.com/Amakinto-Labs/convoye/issues/8)): User can add environment nodes to canvas via drag-and-drop
+- [ ] **FR-001.3** ([#9](https://github.com/Amakinto-Labs/convoye/issues/9)): User can connect environments with promotion path edges
+- [ ] **FR-001.4** ([#10](https://github.com/Amakinto-Labs/convoye/issues/10)): User can configure each environment: name, branch, deploy target, auto-deploy, required reviewers
+- [ ] **FR-001.5** ([#11](https://github.com/Amakinto-Labs/convoye/issues/11)): User can configure promotion paths: require tests, require approval
+- [ ] **FR-001.6** ([#12](https://github.com/Amakinto-Labs/convoye/issues/12)): Pipeline supports non-linear flows (one source to multiple targets)
+- [ ] **FR-001.7** ([#13](https://github.com/Amakinto-Labs/convoye/issues/13)): Pipeline state persists to database and can be reloaded
+- [ ] **FR-001.8** ([#14](https://github.com/Amakinto-Labs/convoye/issues/14)): Pipeline generates convoye.yml configuration file
 
 ## Details
 

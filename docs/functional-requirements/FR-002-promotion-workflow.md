@@ -1,19 +1,19 @@
-# FR-002: Promotion Workflow
+# FR-002: Promotion Workflow ([#2](https://github.com/Amakinto-Labs/convoye/issues/2))
 
 The promotion workflow moves feature branches through pipeline environments using an intermediate promotion branch pattern. This ensures the feature branch remains clean while conflicts are detected and resolved before merging into the target environment.
 
 ## Requirements
 
-- [ ] **FR-002.1**: System detects feature branches in connected repository
-- [ ] **FR-002.2**: User can view all features and their current environment position
-- [ ] **FR-002.3**: User can promote a feature to the next environment
-- [ ] **FR-002.4**: Promotion creates a promotion branch (`promote/<feature>_-_<env>`)
-- [ ] **FR-002.5**: System merges target environment branch INTO promotion branch for conflict detection
-- [ ] **FR-002.6**: System shows conflicts if they exist, allows resolution
-- [ ] **FR-002.7**: System opens PR from promotion branch to environment branch
-- [ ] **FR-002.8**: On PR merge, system triggers deployment to target environment
-- [ ] **FR-002.9**: Feature branch remains clean and untouched throughout promotion
-- [ ] **FR-002.10**: User can batch promote multiple features
+- [ ] **FR-002.1** ([#15](https://github.com/Amakinto-Labs/convoye/issues/15)): System detects feature branches in connected repository
+- [ ] **FR-002.2** ([#16](https://github.com/Amakinto-Labs/convoye/issues/16)): User can view all features and their current environment position
+- [ ] **FR-002.3** ([#17](https://github.com/Amakinto-Labs/convoye/issues/17)): User can promote a feature to the next environment
+- [ ] **FR-002.4** ([#18](https://github.com/Amakinto-Labs/convoye/issues/18)): Promotion creates a promotion branch (`promote/<feature>_-_<env>`)
+- [ ] **FR-002.5** ([#19](https://github.com/Amakinto-Labs/convoye/issues/19)): System merges target environment branch INTO promotion branch for conflict detection
+- [ ] **FR-002.6** ([#20](https://github.com/Amakinto-Labs/convoye/issues/20)): System shows conflicts if they exist, allows resolution
+- [ ] **FR-002.7** ([#21](https://github.com/Amakinto-Labs/convoye/issues/21)): System opens PR from promotion branch to environment branch
+- [ ] **FR-002.8** ([#22](https://github.com/Amakinto-Labs/convoye/issues/22)): On PR merge, system triggers deployment to target environment
+- [ ] **FR-002.9** ([#23](https://github.com/Amakinto-Labs/convoye/issues/23)): Feature branch remains clean and untouched throughout promotion
+- [ ] **FR-002.10** ([#24](https://github.com/Amakinto-Labs/convoye/issues/24)): User can batch promote multiple features
 
 ## Details
 

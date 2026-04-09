@@ -1,15 +1,15 @@
-# FR-003: Dashboard
+# FR-003: Dashboard ([#3](https://github.com/Amakinto-Labs/convoye/issues/3))
 
 The dashboard provides a real-time view of all features flowing through the pipeline. It shows environment lanes with feature cards and their current status.
 
 ## Requirements
 
-- [ ] **FR-003.1**: Dashboard shows pipeline with environment lanes
-- [ ] **FR-003.2**: Features displayed as cards in their current environment lane
-- [ ] **FR-003.3**: Real-time status updates (deploying, deployed, failed, conflict)
-- [ ] **FR-003.4**: Click feature card shows full promotion history and audit trail
-- [ ] **FR-003.5**: Filter features by author, status, date range
-- [ ] **FR-003.6**: Promote button available on each feature card
+- [ ] **FR-003.1** ([#25](https://github.com/Amakinto-Labs/convoye/issues/25)): Dashboard shows pipeline with environment lanes
+- [ ] **FR-003.2** ([#26](https://github.com/Amakinto-Labs/convoye/issues/26)): Features displayed as cards in their current environment lane
+- [ ] **FR-003.3** ([#27](https://github.com/Amakinto-Labs/convoye/issues/27)): Real-time status updates (deploying, deployed, failed, conflict)
+- [ ] **FR-003.4** ([#28](https://github.com/Amakinto-Labs/convoye/issues/28)): Click feature card shows full promotion history and audit trail
+- [ ] **FR-003.5** ([#29](https://github.com/Amakinto-Labs/convoye/issues/29)): Filter features by author, status, date range
+- [ ] **FR-003.6** ([#30](https://github.com/Amakinto-Labs/convoye/issues/30)): Promote button available on each feature card
 
 ## Details
 

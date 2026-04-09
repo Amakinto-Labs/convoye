@@ -1,14 +1,14 @@
-# FR-006: Sync PRs
+# FR-006: Sync PRs ([#6](https://github.com/Amakinto-Labs/convoye/issues/6))
 
 After code reaches production, lower environment branches may fall behind. Sync PRs keep environment branches aligned by propagating production state back down the pipeline.
 
 ## Requirements
 
-- [ ] **FR-006.1**: After production deploy, system creates sync PRs to lower environment branches
-- [ ] **FR-006.2**: Sync keeps environment branches aligned with main/production
-- [ ] **FR-006.3**: Sync detects conflicts and surfaces them to user
-- [ ] **FR-006.4**: User can toggle automatic vs manual sync
-- [ ] **FR-006.5**: Sync PR creation can be triggered manually
+- [ ] **FR-006.1** ([#44](https://github.com/Amakinto-Labs/convoye/issues/44)): After production deploy, system creates sync PRs to lower environment branches
+- [ ] **FR-006.2** ([#45](https://github.com/Amakinto-Labs/convoye/issues/45)): Sync keeps environment branches aligned with main/production
+- [ ] **FR-006.3** ([#46](https://github.com/Amakinto-Labs/convoye/issues/46)): Sync detects conflicts and surfaces them to user
+- [ ] **FR-006.4** ([#47](https://github.com/Amakinto-Labs/convoye/issues/47)): User can toggle automatic vs manual sync
+- [ ] **FR-006.5** ([#48](https://github.com/Amakinto-Labs/convoye/issues/48)): Sync PR creation can be triggered manually
 
 ## Details
 
