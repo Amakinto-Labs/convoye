@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+:root {
+  --convoye-bg: #0a0a0f;
+  --convoye-surface: #13131a;
+  --convoye-border: #23232f;
+  --convoye-text: #e4e4e7;
+  --convoye-text-muted: #71717a;
+  --convoye-primary: #6366f1;
+  --convoye-primary-hover: #818cf8;
+  --convoye-success: #22c55e;
+  --convoye-warning: #f59e0b;
+  --convoye-danger: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    sans-serif;
+  background: var(--convoye-bg);
+  color: var(--convoye-text);
+}

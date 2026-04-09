@@ -1,0 +1,37 @@
+---
+const integrations = [
+  { name: "GitHub", soon: false },
+  { name: "GitLab", soon: false },
+  { name: "Bitbucket", soon: true },
+  { name: "Railway", soon: false },
+  { name: "Vercel", soon: false },
+  { name: "Fly.io", soon: true },
+  { name: "AWS", soon: true },
+];
+---
+
+<section id="integrations" class="border-t border-border py-24 md:py-32">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Works with your stack
+      </h2>
+      <p class="mt-4 text-lg text-text-muted">
+        Connect your repositories and deploy targets. More integrations coming soon.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-16 flex max-w-3xl flex-wrap items-center justify-center gap-4">
+      {integrations.map((ig) => (
+        <div class="flex items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 py-3 text-sm font-medium transition hover:border-border-light">
+          <span class="text-text">{ig.name}</span>
+          {ig.soon && (
+            <span class="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-primary">
+              Soon
+            </span>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

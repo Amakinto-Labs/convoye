@@ -1,0 +1,44 @@
+---
+const problems = [
+  {
+    title: "Manual promotion headaches",
+    description: "Cherry-picking commits, writing deploy scripts, and praying nothing breaks between environments.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>`,
+  },
+  {
+    title: "Merge conflicts everywhere",
+    description: "Staging-only fixes leak into feature branches. Hotfixes create cascading conflicts across environments.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>`,
+  },
+  {
+    title: "Zero deployment visibility",
+    description: `No one knows which features are in staging, what shipped last Tuesday, or why QA is broken. It's all "ask the deploy person."`,
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>`,
+  },
+];
+---
+
+<section id="problem" class="border-t border-border py-24 md:py-32">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Deploying across environments shouldn't be chaos
+      </h2>
+      <p class="mt-4 text-text-muted text-lg">
+        Every team hits the same walls when promoting code through environments.
+      </p>
+    </div>
+
+    <div class="mt-16 grid gap-6 md:grid-cols-3">
+      {problems.map((p) => (
+        <div class="group rounded-2xl border border-border bg-surface/50 p-6 transition hover:border-border-light hover:bg-surface">
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-red-500/10">
+            <Fragment set:html={p.icon} />
+          </div>
+          <h3 class="text-lg font-semibold">{p.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-text-muted">{p.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

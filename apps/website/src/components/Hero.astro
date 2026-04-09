@@ -1,0 +1,91 @@
+---
+const environments = ["Dev", "Staging", "QA", "Production"];
+const features = [
+  { name: "feat/auth-flow", status: "In Staging", color: "text-amber-400" },
+  { name: "feat/dashboard-v2", status: "In QA", color: "text-blue-400" },
+  { name: "fix/payment-bug", status: "Deployed", color: "text-emerald-400" },
+];
+---
+
+<section class="relative overflow-hidden pt-32 pb-24 md:pt-44 md:pb-36">
+  <!-- Background glow -->
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute left-1/2 top-0 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-primary/8 blur-[120px]"></div>
+  </div>
+
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <div class="animate-fade-in-up mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm text-text-muted">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      Currently in private beta
+    </div>
+
+    <h1 class="animate-fade-in-up animate-delay-100 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+      Promotion pipelines{" "}
+      <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        for any stack
+      </span>
+    </h1>
+
+    <p class="animate-fade-in-up animate-delay-200 mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-muted md:text-xl">
+      Move features safely from dev to production with visual drag-and-drop
+      pipelines, conflict isolation, and full deployment visibility.
+    </p>
+
+    <div class="animate-fade-in-up animate-delay-300 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a
+        href="#cta"
+        class="group flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary-hover hover:shadow-primary/30"
+      >
+        Get Early Access
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a
+        href="https://github.com/convoye"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 rounded-xl border border-border bg-surface px-6 py-3 text-base font-semibold text-text-muted transition hover:border-border-light hover:text-text"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Pipeline illustration -->
+  <div class="animate-fade-in-up animate-delay-400 mx-auto mt-20 max-w-4xl px-6">
+    <div class="rounded-2xl border border-border bg-surface/60 p-6 backdrop-blur-sm md:p-8">
+      <div class="flex items-center gap-2 mb-6 text-xs text-text-dim font-medium uppercase tracking-wider">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>
+        Pipeline Preview
+      </div>
+      <div class="flex flex-col items-center gap-3 sm:flex-row sm:gap-0">
+        {environments.map((env, i) => (
+          <div class="flex items-center gap-0 sm:flex-1">
+            <div
+              class:list={[
+                "flex-1 rounded-lg border px-4 py-3 text-center text-sm font-medium transition",
+                i === 0 && "border-primary/40 bg-primary/10 text-primary",
+                i === 3 && "border-emerald-500/30 bg-emerald-500/8 text-emerald-400",
+                i !== 0 && i !== 3 && "border-border bg-surface-alt text-text-muted",
+              ]}
+            >
+              {env}
+            </div>
+            {i < 3 && (
+              <svg xmlns="http://www.w3.org/2000/svg" class="mx-1 hidden h-4 w-4 shrink-0 text-text-dim sm:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+        {features.map((f) => (
+          <div class="flex items-center justify-between rounded-lg border border-border bg-bg/50 px-4 py-2.5">
+            <span class="text-sm text-text-muted font-mono">{f.name}</span>
+            <span class:list={["text-xs font-medium", f.color]}>{f.status}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

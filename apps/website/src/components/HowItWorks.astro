@@ -1,0 +1,61 @@
+---
+const steps = [
+  {
+    label: "Connect",
+    title: "Connect your repo",
+    description: "Link your GitHub, GitLab, or Bitbucket repository in one click.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1"/><path d="M9 3H7a2 2 0 0 0-2 2v2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M3 17v2a2 2 0 0 0 2 2h2"/><path d="M7 21v-2a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2v-1a1 1 0 0 1 1-1"/></svg>`,
+  },
+  {
+    label: "Build",
+    title: "Build your pipeline",
+    description: "Drag environments into order. Add approval gates, auto-merge rules, and deploy triggers.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg>`,
+  },
+  {
+    label: "Promote",
+    title: "Promote features",
+    description: "Move individual features or batches through environments with one click. Conflicts are isolated automatically.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>`,
+  },
+  {
+    label: "Deploy",
+    title: "Deploy automatically",
+    description: "Trigger deployments to your platform of choice when code lands in the target environment branch.",
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>`,
+  },
+];
+---
+
+<section id="how-it-works" class="border-t border-border py-24 md:py-32">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Up and running in minutes
+      </h2>
+      <p class="mt-4 text-lg text-text-muted">
+        Four steps from repository to production pipeline.
+      </p>
+    </div>
+
+    <div class="mt-16 grid gap-px md:grid-cols-4">
+      {steps.map((s, i) => (
+        <div class="relative flex flex-col items-center px-6 py-8 text-center">
+          <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-surface">
+            <Fragment set:html={s.icon} />
+          </div>
+          <span class="mb-1 text-xs font-semibold uppercase tracking-wider text-primary">
+            Step {i + 1}
+          </span>
+          <h3 class="text-base font-semibold">{s.title}</h3>
+          <p class="mt-2 text-sm text-text-muted leading-relaxed">{s.description}</p>
+
+          {/* Connector line */}
+          {i < steps.length - 1 && (
+            <div class="absolute right-0 top-1/2 hidden h-px w-6 -translate-y-1/2 translate-x-3 bg-border md:block"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

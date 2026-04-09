@@ -1,0 +1,16 @@
+{
+  "name": "@convoye/website",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.9.2",
+    "@astrojs/tailwind": "^6.0.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
