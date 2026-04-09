@@ -14,8 +14,8 @@
     "db:push": "turbo db:push"
   },
   "devDependencies": {
-    "turbo": "^2.5.0",
-    "typescript": "^5.8.0"
+    "turbo": "^2.9.5",
+    "typescript": "^6.0.2"
   },
   "packageManager": "npm@11.7.0"
 }
